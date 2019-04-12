@@ -12,9 +12,10 @@ fun main (args: Array <String>){
     // Inmutables
     /* No se puede cambiartodo lo que se pueda hacer inmotable es mejor
      Mientras mas inmutable sea el codigo es mejor*/
-    val nombre = "Veronica"
 
-    //nombre = "Veronica"
+
+    val nombre = "Veronica"
+    // nombre = "Veronica"
 
     // Tipos de Datos
 
