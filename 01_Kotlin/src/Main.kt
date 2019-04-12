@@ -6,15 +6,15 @@ fun main (args: Array <String>){
 
     // Mutables
 
-    var nombreI = "Adrian"
-    nombreI = "Vicente"
+    var nombreI = "Elizabeth"
+    nombreI = "Karen"
 
     // Inmutables
     /* No se puede cambiartodo lo que se pueda hacer inmotable es mejor
      Mientras mas inmutable sea el codigo es mejor*/
     val nombre = "Veronica"
 
-    //nombre = "Vicente"
+    //nombre = "Veronica"
 
     // Tipos de Datos
 
