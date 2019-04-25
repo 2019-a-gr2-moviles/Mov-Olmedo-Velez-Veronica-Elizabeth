@@ -73,6 +73,9 @@ fun main (args: Array <String>){
 
     val nota = arrayListOf(1,2,3,4,5,6)
 
+
+    val numerito = Numero(1)
+
     // forEach -> Iterar el arreglo
 
     nota.forEach {nota: Int ->
@@ -185,4 +188,149 @@ fun holaMundo( mensaje: Any) : Unit{
 }
 fun sumarDosNumeros( numUno: Int, numDos: Int) : Int{
     return numUno + numDos                             // Sumar dos numeros
+}
+
+//Clases en Kotlin
+//Palabra reservada
+
+
+
+
+class Usuario(var cedula:String) { //Primer constructor
+    public var nombre: String = "" // Inicializar
+    public var apellido: String = "";
+
+    /*constructor (
+        cedulaM: String,
+        apellido: String):this.(cedulaM)// tambien se puede inicializar en el constructor
+
+    {
+        this.apellido = apellido/
+    }
+     */
+    }
+
+//Se puede utilizar varios constructores
+// No se debe utilizar get y set
+// Por defecto todas las propiedades por defecto son publicas
+
+
+    class UsuarioKT(
+        public var nombre: String,
+        public val apellido: String, private var id: Int,
+        protected var id2: Int) {
+
+        init {
+
+        }
+
+        public fun hola(): String {
+            return this.apellido
+        }
+
+        private fun hola2() {
+
+        }
+
+        protected fun hola3() {
+
+        }
+
+        //No tiene metodos estaticos y tmpoco sw
+
+        companion object {
+            val gravedad = 10.5
+            fun correr() {
+                println("Estoy corriendo en $gravedad")
+            }
+        }
+    }
+
+    class BaseDeDatos {
+        companion object {
+            val usuarios = arrayListOf(1, 2, 3)
+            fun agregarUsuario(usuario: Int) {
+                this.usuarios.add(usuario)
+            }
+
+            fun eliminarUsuario(usuario: Int) {
+                //this.usuarios
+            }
+
+        }
+    }
+
+
+    fun aa() {
+        UsuarioKT.gravedad // Son parecido a las propiedades estaticas
+        UsuarioKT.correr() // Son parecidos a los metodos staticos en java
+    }
+
+
+    fun a() {
+        val nika = UsuarioKT("a", "b", 1)
+        nika.nombre = "Eli"
+    }
+
+    fun UsuarioKT(nombre: String, apellido: String, id: Int) {
+
+    }
+
+    //Sobrecarga de constructores distintos tipos de parametos
+    class Numero(var numero: Int) {
+
+        constructor(numeroString: String) : this(numeroString.toInt()) {
+            println("CONSTRIUCTOR")
+        }
+
+        init {
+            println("INIT")
+        }
+    }
+
+    class A {}
+
+//A.corre()   //Metodo estatico
+//A.gravedad  //Propiedad estatica
+
+}
+
+open class  Numeros(var numeroUno: Int, var numeroDos: Int){
+
+}
+
+final class Suma (var numeroUnos:Int,
+            var numeroDoss:Int):
+            Numeros(numeroUnos,numeroDoss){
+    }
+
+fun cc(){
+    val a = Suma(1,2)
+}
+
+
+
+
+
+
+
+
+
+
+
+fun  presley(requerido:Int,
+             opcional:Int=1,
+             nulo:Usuario.UsuarioKT?){ // A veces va a ser nulo
+        //nulo.nombre  //Puede ser nulo
+    if(nulo != null)
+        nulo.nombre
+
+    val nombresito:String? = nulo?.nombre.toString()//Un estrig que a veces es nulo y a veces es string
+    nulo!!.nombre //La variable
+}
+
+fun cddd(){
+    presley(requerido=1, nulo= null) // Named Parameters
+    presley(1,1,null)
+    presley(1,1,null)
 }
