@@ -56,6 +56,8 @@ fun main (args: Array <String>){
     estaJalado( 10.0)
     holaMundo("Veronica")
     holaMundo(2)
+
+
      //No se necesita escribir las numUno y numDos los pone el editor de texto
 
     val total = sumarDosNumeros(1,2)
@@ -73,8 +75,6 @@ fun main (args: Array <String>){
 
     val nota = arrayListOf(1,2,3,4,5,6)
 
-
-    val numerito = Numero(1)
 
     // forEach -> Iterar el arreglo
 
@@ -155,6 +155,9 @@ fun main (args: Array <String>){
     fecha.time = 11234566
     fecha.year = 200
     //fecha = Date (1989,6,10)
+
+    //Probar init
+    val numerito = Numero("1")
 
 }
 
