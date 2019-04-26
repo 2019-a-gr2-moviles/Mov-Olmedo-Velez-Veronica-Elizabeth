@@ -197,14 +197,14 @@ fun sumarDosNumeros( numUno: Int, numDos: Int) : Int{
 
 
 class Usuario(var cedula:String) { //Primer constructor
+
     public var nombre: String = "" // Inicializar
     public var apellido: String = "";
 
     /*constructor (
         cedulaM: String,
-        apellido: String):this.(cedulaM)// tambien se puede inicializar en el constructor
+        apellido: String):this.(cedulaM){// tambien se puede inicializar en el constructor
 
-    {
         this.apellido = apellido/
     }
      */
@@ -215,36 +215,36 @@ class Usuario(var cedula:String) { //Primer constructor
 // Por defecto todas las propiedades por defecto son publicas
 
 
-    class UsuarioKT(
-        public var nombre: String,
-        public val apellido: String, private var id: Int,
-        protected var id2: Int) {
+class UsuarioKT(
+    public var nombre: String,
+    public val apellido: String, private var id: Int,
+    protected var id2: Int) {
 
-        init {
+    init {
 
-        }
+    }
 
-        public fun hola(): String {
-            return this.apellido
-        }
+    public fun hola(): String {
+        return this.apellido
+    }
 
-        private fun hola2() {
+    private fun hola2() {
 
-        }
+    }
 
-        protected fun hola3() {
+    protected fun hola3() {
 
-        }
+    }
 
-        //No tiene metodos estaticos y tmpoco sw
+    //No tiene metodos estaticos y tmpoco sw
 
-        companion object {
-            val gravedad = 10.5
-            fun correr() {
-                println("Estoy corriendo en $gravedad")
-            }
+    companion object {
+        val gravedad = 10.5
+        fun correr() {
+            println("Estoy corriendo en $gravedad")
         }
     }
+
 
     class BaseDeDatos {
         companion object {
@@ -266,34 +266,37 @@ class Usuario(var cedula:String) { //Primer constructor
         UsuarioKT.correr() // Son parecidos a los metodos staticos en java
     }
 
+}
 
-    fun a() {
-        val nika = UsuarioKT("a", "b", 1)
-        nika.nombre = "Eli"
-    }
 
-    fun UsuarioKT(nombre: String, apellido: String, id: Int) {
+fun a() {
+    val nika = UsuarioKT("a", "b", 1,8)
+    nika.nombre = "Eli"
+}
 
-    }
 
-    //Sobrecarga de constructores distintos tipos de parametos
-    class Numero(var numero: Int) {
+//fun UsuarioKT(nombre: String, apellido: String, id: Int) {
 
+//}
+
+
+//Sobrecarga de constructores distintos tipos de parametos
+class Numero(var numero: Int) {
         constructor(numeroString: String) : this(numeroString.toInt()) {
-            println("CONSTRIUCTOR")
+            println("CONSTRUCTOR")
         }
 
         init {
             println("INIT")
+            this.numero
         }
     }
 
-    class A {}
-
-//A.corre()   //Metodo estatico
-//A.gravedad  //Propiedad estatica
-
+class A {
+        //A.corre()   //Metodo estatico
+        //A.gravedad  //Propiedad estatica
 }
+
 
 open class  Numeros(var numeroUno: Int, var numeroDos: Int){
 
@@ -310,17 +313,9 @@ fun cc(){
 
 
 
-
-
-
-
-
-
-
-
 fun  presley(requerido:Int,
              opcional:Int=1,
-             nulo:Usuario.UsuarioKT?){ // A veces va a ser nulo
+             nulo:UsuarioKT?){ // A veces va a ser nulo
         //nulo.nombre  //Puede ser nulo
     if(nulo != null)
         nulo.nombre
