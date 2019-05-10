@@ -1,0 +1,7 @@
+1,Labial,Rojo,Loreal,20.5,30
+2,Rimel,Negro,Avon,10.5,2
+3,Colorete,Rosado,Yambal,30.4,2
+4,Sombras,Multicolor,CH,10.30,5
+5,Crema,Blanca,Nivea,9.1,26,sdf,adsfdg,adsfdgf,10.5,3
+7,Pintauñas,Rosado,Avon,30,5,3
+8,Sombra,Negro,CH,20,10,4
