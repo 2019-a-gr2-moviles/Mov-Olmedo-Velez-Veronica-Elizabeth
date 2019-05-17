@@ -23,12 +23,6 @@ class MainActivity : AppCompatActivity() {
                 .setAction("Action", null).show()
         }
 
-        val nombre = intent.getStringExtra("name")
-        val edad = intent.getIntExtra("edad", 0)
-
-        Log.i("intents","Nombre: $nombre" )
-        Log.i("intents","Edad: $edad" )
-
         btn_actividad_dos.setOnClickListener{
             irAActividadDos()
         }
@@ -42,6 +36,9 @@ class MainActivity : AppCompatActivity() {
             this,
             Actividad_Dos::class.java
         )
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
+        intent.putExtra("nombre", "Nika")
+        intent.putExtra("edad",29)
         startActivity (intent)
     }
 
