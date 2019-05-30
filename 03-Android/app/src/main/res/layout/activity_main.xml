@@ -22,5 +22,14 @@
             android:id="@+id/btn_parcelable" app:layout_constraintEnd_toEndOf="@+id/textView"
             app:layout_constraintStart_toStartOf="@+id/textView" android:layout_marginTop="32dp"
             app:layout_constraintTop_toBottomOf="@+id/textView" app:layout_constraintHorizontal_bias="0.545"/>
+    <Button
+            android:text="ADAPTER"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_adapter"
+            app:layout_constraintTop_toTopOf="@+id/btn_parcelable"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_parcelable"
+            app:layout_constraintStart_toEndOf="@+id/btn_parcelable" android:layout_marginLeft="36dp"
+            android:layout_marginStart="36dp" app:layout_constraintVertical_bias="0.0"/>
 
 </android.support.constraint.ConstraintLayout>
