@@ -15,6 +15,9 @@ class MainActivity : AppCompatActivity() {
         btn_parcelable.setOnClickListener {
             irAParcelable()
         }
+        btn_adapter.setOnClickListener {
+            irAListView()
+        }
     }
 
     fun irAParcelable(){
@@ -35,6 +38,13 @@ class MainActivity : AppCompatActivity() {
     }
 
 
+    fun irAListView(){
+        val intentExplicito = Intent(
+            this,
+            ListViewActivity::class.java
+        )
+        startActivity(intentExplicito)
+    }
 
 
 }
