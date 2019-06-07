@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name" translatable="false">MyAplicacion3</string>
+    <string name="title_activity_pacientes" translatable="false">Entrenador</string>
+    <string name="title_activity_gestion" translatable="false">Gestión de Entrenador</string>
+    <string name="txt_usuario" translatable="false">Nombre</string>
+    <string name="btn_entrar" translatable="false">Entrar</string>
+    <string name="btn_gestionarEntrenador" translatable="false">Gestionar Entrenador</string>
+    <string name="btn_crearEntrenador" translatable="false">Crear Entrenador</string>
+    <string name="txt_nombresEntrenador" translatable="false">Nombres</string>
+    <string name="txt_apellidosEntrenador" translatable="false">Apellidos</string>
+    <string name="fechaNacimiento" translatable="false">Fecha de Nacimiento</string>
+    <string name="numeroMedallas" translatable="false">Número de Medallas</string>
+    <string name="campeonActual" translatable="false">Campeón Actual</string>
+    <string name="btn_insertar" translatable="false">Añadir</string>
+    <string name="btn_eliminar" translatable="false">Eliminar</string>
+    <string name="btn_actualizar" translatable="false">Actualizar</string>
+    <string name="btn_gestionarPokemon" translatable="false">Gestionar Pokemon</string>
+    <string name="btn_crearPokemon" translatable="false">Crear Pokemon</string>
+    <string name="txt_numeroPokemon" translatable="false">Número de Pokemon</string>
+    <string name="txt_nombrePokemon" translatable="false">Nombre Pokemon</string>
+    <string name="txt_poderEspecialUno" translatable="false">Poder Especial Uno</string>
+    <string name="fechaCaptura" translatable="false">Fecha de Captura</string>
+    <string name="txt_nivel" translatable="false">Nivel</string>
+    <string name="txt_poderEspecialDos" translatable="false">Poder Especial Dos</string>
+</resources>

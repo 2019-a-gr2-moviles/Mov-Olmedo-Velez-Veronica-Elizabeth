@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name" translatable="false">MyAplicacion3</string>
+    <string name="title_activity_pacientes" translatable="false">Coach</string>
+    <string name="title_activity_gestion" translatable="false">Coach Management</string>
+    <string name="txt_usuario" translatable="false">Name</string>
+    <string name="btn_entrar" translatable="false">Go</string>
+    <string name="btn_gestionarEntrenador" translatable="false">Coach Management</string>
+    <string name="btn_crearEntrenador" translatable="false">Create Coach</string>
+    <string name="txt_nombresEntrenador" translatable="false">First Name</string>
+    <string name="txt_apellidosEntrenador" translatable="false">Sername</string>
+    <string name="fechaNacimiento" translatable="false">Birthdate</string>
+    <string name="numeroMedallas" translatable="false">Number od medals</string>
+    <string name="campeonActual" translatable="false">Current Champion</string>
+    <string name="btn_insertar" translatable="false">Create</string>
+    <string name="btn_eliminar" translatable="false">Delete</string>
+    <string name="btn_actualizar" translatable="false">Update</string>
+    <string name="btn_gestionarPokemon" translatable="false">Pokemon Management</string>
+    <string name="btn_crearPokemon" translatable="false">Create Pokemon</string>
+    <string name="txt_numeroPokemon" translatable="false">Number of Pokemon</string>
+    <string name="txt_nombrePokemon" translatable="false">Name Pokemon</string>
+    <string name="txt_poderEspecialUno" translatable="false">Special Power One</string>
+    <string name="fechaCaptura" translatable="false">Special Power Two</string>
+    <string name="txt_nivel" translatable="false">Level</string>
+    <string name="txt_poderEspecialDos" translatable="false">Date of Capture</string>
+</resources>
