@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
             irAListView()
         }
 
-        btn_adapter.setOnClickListener {
+        btn_recycle_view.setOnClickListener {
             irArecycleView()
         }
     }
