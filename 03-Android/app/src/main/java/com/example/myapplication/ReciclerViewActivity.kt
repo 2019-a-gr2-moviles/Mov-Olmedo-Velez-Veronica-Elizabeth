@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v7.widget.DefaultItemAnimator
 import android.support.v7.widget.LinearLayoutManager
+import android.support.v7.widget.RecyclerView
 import kotlinx.android.synthetic.main.activity_recicler_view.*
 
 class ReciclerViewActivity : AppCompatActivity() {
@@ -13,26 +14,38 @@ class ReciclerViewActivity : AppCompatActivity() {
         setContentView(R.layout.activity_recicler_view)
 
         val lista = arrayListOf<Persona>()
-        val recycler_view = rv_personas
-        val actividad = this
+        // val recycler_view = rv_personas
+        // val actividad = this
 
-        lista.add(Persona("Nika","1720572773"))
-        lista.add(Persona("Vane","1720571323"))
-        lista.add(Persona("Mary","1720572014"))
+        lista.add(Persona("Adrian","171819134"))
+        lista.add(Persona("Vicente","0192839495"))
+        lista.add(Persona("Adrian","2003938182"))
 
-
-        val adaptadorPersona = AdaptadorPersona (lista,actividad, recycler_view)
-
-        rv_personas.adapter = adaptadorPersona
-        rv_personas.itemAnimator = DefaultItemAnimator()
-        rv_personas.layoutManager = LinearLayoutManager(this)
-
-
-        //Adaptador que se modificaron los datos
-
-        adaptadorPersona.notifyDataSetChanged()
+        iniciarRecyclerView(lista,this, rv_personas)
 
     }
 
+
+    fun iniciarRecyclerView ( lista: List<Persona>,
+                              actividad: ReciclerViewActivity,
+                              recycler_view: RecyclerView){
+
+        val adaptadorPersona = AdaptadorPersona(
+            lista,
+            actividad,
+            recycler_view
+        )
+        recycler_view.adapter = adaptadorPersona
+        recycler_view.itemAnimator = DefaultItemAnimator()
+        recycler_view.layoutManager = LinearLayoutManager(actividad)
+
+        adaptadorPersona.notifyDataSetChanged()
+    }
+
+
+    fun cambiarNombreTextView (texto: String)
+    {
+        txt_Titulo_rv.text = texto
+    }
 
 }

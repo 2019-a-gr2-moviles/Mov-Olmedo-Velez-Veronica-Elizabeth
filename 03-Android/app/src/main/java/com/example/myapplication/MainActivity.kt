@@ -3,7 +3,10 @@ package com.example.myapplication
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.provider.ContactsContract
+import kotlinx.android.synthetic.main.activity_intent_respuesta.*
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_parcelable.*
 import java.util.*
 
 class MainActivity : AppCompatActivity() {
@@ -15,16 +18,24 @@ class MainActivity : AppCompatActivity() {
         btn_parcelable.setOnClickListener {
             irAParcelable()
         }
+        btn_toast.setOnClickListener {
+            irAToast()
+        }
         btn_adapter.setOnClickListener {
             irAListView()
         }
-
-        btn_recycle_view.setOnClickListener {
-            irArecycleView()
+        btn_recycler_view.setOnClickListener {
+            irArecyclerView()
         }
+
+        btn_intent.setOnClickListener {
+            irAIntentRespuesta()
+        }
+
+
     }
 
-    fun irArecycleView(){
+    fun irArecyclerView(){
         val intentExplicito = Intent(
             this,
             ReciclerViewActivity::class.java
@@ -32,20 +43,19 @@ class MainActivity : AppCompatActivity() {
         startActivity(intentExplicito)
     }
 
-    fun irAParcelable(){
+    fun irAToast(){
         val intentExplicito = Intent(
             this,
-            Parcelable::class.java
+            Main2Activity::class.java
         )
-        val nika = Usuario("Nika",
-            24,
-            Date(),
-            100.50)
-        intentExplicito.putExtra("usuario",nika)
         startActivity(intentExplicito)
+    }
 
-        val cachetes = Mascotas("Cachetes", nika)
-        intentExplicito.putExtra("mascotas",cachetes)
+    fun irAIntentRespuesta(){
+        val intentExplicito = Intent(
+            this,
+            IntentRespuestaActivity::class.java
+        )
         startActivity(intentExplicito)
     }
 
@@ -57,6 +67,29 @@ class MainActivity : AppCompatActivity() {
         )
         startActivity(intentExplicito)
     }
+
+
+    fun irAParcelable(){
+        val intentExplicito = Intent(
+            this,
+            Parcelable::class.java
+        )
+        val adrian = Usuario("Adrian",
+            29,
+            Date(),
+            12.12)
+        intentExplicito.putExtra("usuario",adrian)
+
+        val cachetes = Mascota("Cachetes", adrian)
+        intentExplicito.putExtra("mascota", cachetes)
+
+
+        startActivity(intentExplicito)
+
+
+    }
+
+
 
 
 }
