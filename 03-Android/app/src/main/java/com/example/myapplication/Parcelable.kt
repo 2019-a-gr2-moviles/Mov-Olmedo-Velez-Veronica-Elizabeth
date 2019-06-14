@@ -5,30 +5,34 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 
-open class Parcelable : AppCompatActivity() {
+class Parcelable : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_parcelable)
 
-        val nika: Usuario? = this.intent
-            .getParcelableExtra("usuario")
+        val adrian: Usuario? = this.intent
+            .getParcelableExtra<Usuario>("usuario")
 
-        val cachetes: Mascotas? = this.intent
-            .getParcelableExtra<Mascotas>("mascotas")
 
-        Log.i("parcelable","Nombre: ${nika?.nombre}")
-        Log.i("parcelable","Edad: ${nika?.edad}")
-        Log.i("parcelable","Fecha Nacimiento: ${nika?.fechaNacimiento.toString()}")
-        Log.i("parcelable","Sueldo: ${nika?.sueldo}")
+        val cachetes: Mascota? = this.intent
+            .getParcelableExtra<Mascota>("mascota")
+        Log.i("parcelable","Nombre ${adrian?.nombre}")
+        Log.i("parcelable","Nombre ${adrian?.edad}")
+        Log.i("parcelable","Nombre ${adrian?.fechaNacimiento.toString()}")
+        Log.i("parcelable","Nombre ${adrian?.sueldo}")
 
-        Log.i("parcelable","Nombre Mascota: ${cachetes?.nombre}")
-        Log.i("parcelable","Nombre Dueño: ${cachetes?.dueno?.nombre}")
+        Log.i("parcelable","Nombre ${cachetes?.nombre}")
+        Log.i("parcelable","Nombre ${cachetes?.duenio?.nombre}")
+
     }
+
     fun regresarAMenu(){
         val intentExplicito = Intent(
             this,
             MainActivity::class.java
         )
+        startActivity(intentExplicito)
     }
+
 }
