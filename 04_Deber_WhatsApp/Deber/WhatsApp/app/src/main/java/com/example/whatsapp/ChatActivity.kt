@@ -61,20 +61,20 @@ class ChatActivity : AppCompatActivity() {
 
 
         when(mensaje.id_usuario){
-            1 -> { img_profile_image.setImageResource(R.drawable.a1) }
-            2 -> { img_profile_image.setImageResource(R.drawable.a2) }
-            3 -> { img_profile_image.setImageResource(R.drawable.a3) }
-            4 -> { img_profile_image.setImageResource(R.drawable.a4) }
-            5 -> { img_profile_image.setImageResource(R.drawable.a5) }
-            6 -> { img_profile_image.setImageResource(R.drawable.a6) }
-            7 -> { img_profile_image.setImageResource(R.drawable.a7) }
-            8 -> { img_profile_image.setImageResource(R.drawable.a8) }
-            9 -> { img_profile_image.setImageResource(R.drawable.a9) }
-            10 -> { img_profile_image.setImageResource(R.drawable.a10) }
-            else ->{img_profile_image.setImageResource(R.drawable.a1)}
+            1 -> { img_prerfil.setImageResource(R.drawable.a1) }
+            2 -> { img_prerfil.setImageResource(R.drawable.a2) }
+            3 -> { img_prerfil.setImageResource(R.drawable.a3) }
+            4 -> { img_prerfil.setImageResource(R.drawable.a4) }
+            5 -> { img_prerfil.setImageResource(R.drawable.a5) }
+            6 -> { img_prerfil.setImageResource(R.drawable.a6) }
+            7 -> { img_prerfil.setImageResource(R.drawable.a7) }
+            8 -> { img_prerfil.setImageResource(R.drawable.a8) }
+            9 -> { img_prerfil.setImageResource(R.drawable.a9) }
+            10 -> { img_prerfil.setImageResource(R.drawable.a10) }
+            else ->{img_prerfil.setImageResource(R.drawable.a1)}
             }
-        txt_mensaje.text = "En Linea"
-        txt_nombre_usuario_chat.text = mensaje.nickname
+        txt_mensaje.text = "en línea"
+        txt_usuario_chat.text = mensaje.nickname
 
 
 

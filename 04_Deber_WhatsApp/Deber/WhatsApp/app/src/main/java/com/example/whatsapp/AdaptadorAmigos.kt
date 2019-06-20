@@ -25,8 +25,8 @@ class AdaptadorAmigos (private val listaUsuarios:List<Usuario>,
 
 
         init {
-            imagen_usuario = view.findViewById(R.id.img_profile_image) as ImageView
-            txt_autor_mensaje = view.findViewById(R.id.txt_nombre_usuario_chat) as TextView
+            imagen_usuario = view.findViewById(R.id.img_prerfil) as ImageView
+            txt_autor_mensaje = view.findViewById(R.id.txt_usuario_chat) as TextView
             txt_mensaje = view.findViewById(R.id.txt_mensaje) as TextView
             txt_hora = view.findViewById(R.id.txt_hora) as TextView
 

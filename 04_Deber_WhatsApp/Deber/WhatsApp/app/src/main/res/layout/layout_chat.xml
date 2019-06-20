@@ -10,12 +10,12 @@
             android:gravity="center"
             android:layout_width="230dp"
             android:layout_height="46dp"
-            android:layout_marginRight="160dp"
+            android:layout_marginRight="100dp"
             android:id="@+id/txt_usuario_uno"
             android:radius="5px"
             android:background="@drawable/round1"/>
     <TextView
-            android:layout_marginLeft="160dp"
+            android:layout_marginLeft="100dp"
             android:gravity="center"
             android:text="Usuario Dos"
             android:layout_width="230dp"
