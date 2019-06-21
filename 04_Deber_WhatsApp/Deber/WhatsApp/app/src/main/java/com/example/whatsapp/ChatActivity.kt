@@ -24,14 +24,14 @@ class ChatActivity : AppCompatActivity() {
 
 
         listachat.add(Chat("Hola como estas? ","Bien y tu?"))
-        listachat.add(Chat(":D Hace mucho tiempo que no hablamos","Es tengo mucho trabajo"))
-        listachat.add(Chat("Te apetece quedar para un café","Si cuando :P"))
+        listachat.add(Chat(":D Hace mucho tiempo que no hablamos","Es tengo mucho trabajo en la universidad"))
+        listachat.add(Chat("Te apetece quedar para un café o almorzar","Si cuando :P"))
         listachat.add(Chat("Mañana","Ok"))
-        listachat.add(Chat("En la tarde","Mejor en la mañana"))
-        listachat.add(Chat("Ok","Entonces te llamo"))
-        listachat.add(Chat("Vale","Cuidate"))
-        listachat.add(Chat("Gracias tu tambien","Saludame a Jenny"))
-        listachat.add(Chat("Ok","Adios!!"))
+        listachat.add(Chat("En la tarde","Mañana??"))
+        listachat.add(Chat("Ok","Te llamo en la tarde para confirmarte"))
+        listachat.add(Chat("Vale","Cuidate Mucho"))
+        listachat.add(Chat("Gracias tu tambien","Saluda a Jenny"))
+        listachat.add(Chat("Ok Muchacha","Adios!!"))
 
 
         iniciarRecylerView(listachat,this,recicler_view_chats)
