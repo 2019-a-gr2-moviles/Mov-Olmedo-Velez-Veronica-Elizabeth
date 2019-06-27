@@ -31,8 +31,18 @@ class MainActivity : AppCompatActivity() {
         btn_intent.setOnClickListener {
             irAIntentRespuesta()
         }
+        btn_conexion_http.setOnClickListener {
+            irAHttp()
+        }
 
 
+    }
+    fun irAHttp(){
+        val intentExplicito = Intent(
+            this,
+            ConexionHttpActivity::class.java
+        )
+        startActivity(intentExplicito)
     }
 
     fun irArecyclerView(){

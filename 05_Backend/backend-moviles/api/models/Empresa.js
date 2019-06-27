@@ -7,14 +7,18 @@
 
 module.exports = {
 
-  attributes: {
+  nombre:{
+    type:'string',
+    required: true
+  },
+
+  usuariosDeEmpresa: {
     // CONFIGURACION DEL PAPA
     Empresa: { // Nombre atributo de la relacion
       collection: 'usuario', // Nombre del modelo a relacionar
       via: 'fkEmpresa'  // Nombre atributo FK del otro modelo
     },
   }
-
 
 };
 
