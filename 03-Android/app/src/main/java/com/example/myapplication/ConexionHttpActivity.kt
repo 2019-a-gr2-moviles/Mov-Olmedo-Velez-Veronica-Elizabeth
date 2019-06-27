@@ -9,6 +9,7 @@ import com.beust.klaxon.Klaxon
 import kotlinx.android.synthetic.main.activity_main.*
 import java.util.*
 
+
 class ConexionHttpActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -41,31 +42,69 @@ class ConexionHttpActivity : AppCompatActivity() {
 
             empresaInstancia?.forEach {
 
-                Log.i("http",
-                    "Nombre ${it.nombre}")
+                Log.i(
+                    "http",
+                    "Nombre ${it.nombre}"
+                )
 
-                Log.i("http",
-                    "Id ${it.id}")
+                Log.i(
+                    "http",
+                    "Id ${it.id}"
+                )
 
-                Log.i("http",
-                    "Fecha ${it.fechaCreacion}")
+                Log.i(
+                    "http",
+                    "Fecha ${it.fechaCreacion}"
+                )
 
                 it.usuarioDeEmpresa.forEach {
-                    Log.i("http",
-                        "Nombre ${it.nombre}")
-                    Log.i("http",
-                        "FK ${it.fkEmpresa}")
+                    Log.i(
+                        "http",
+                        "Nombre ${it.nombre}"
+                    )
+                    Log.i(
+                        "http",
+                        "FK ${it.fkEmpresa}"
+                    )
                 }
 
             }
-        } catch (e:Exception){
-            Log.i("http","${e.message}")
-            Log.i("http",
-                "Error instanciando la empresa")
+        } catch (e: Exception) {
+            Log.i("http", "${e.message}")
+            Log.i(
+                "http",
+                "Error instanciando la empresa"
+            )
         }
 
-    }
+        val url = "http://172.31.104.76:1337//empresa/2"
 
+        url
+            .httpGet()
+            .responseString { request, response, result ->
+                when (result) {
+                    is Failure -> {
+                        val ex = result.getException()
+                        Log.i("http", "Error: ${ex.message}")
+                    }
+                    is Success -> {
+                        val data = result.get()
+                        Log.i("http", "Data: ${data}")
+
+                        val empresaParseada = Klaxon()
+                            .parse<Empresa>(data)
+                        if (empresaParseada != null) {
+                            Log.i("http"," iiiiiiiiiiiiiiiiiiii ")
+                            Log.i("http","${empresaParseada.nombre} ")
+                            Log.i("http","${empresaParseada.id} ")
+                        }
+                    }
+                }
+
+
+            }
+
+    }
 }
 
 
