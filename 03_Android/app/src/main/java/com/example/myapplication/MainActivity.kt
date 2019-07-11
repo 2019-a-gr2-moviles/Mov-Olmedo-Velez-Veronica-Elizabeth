@@ -32,12 +32,13 @@ class MainActivity : AppCompatActivity() {
         btn_http.setOnClickListener {
             irAHttp()
         }
-        btn_map.setOnClickListener {
-            irAMap()
+
+        btn_mapa.setOnClickListener {
+            irAMapa()
         }
     }
 
-    fun irAMap(){
+    fun irAMapa(){
         val intentExplicito = Intent(
             this,
             MapsActivity::class.java
