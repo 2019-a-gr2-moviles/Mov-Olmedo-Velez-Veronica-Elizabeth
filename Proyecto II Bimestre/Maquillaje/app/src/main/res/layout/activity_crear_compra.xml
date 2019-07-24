@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".modulo_compras.CrearCompra" android:orientation="vertical"
+        android:background="@drawable/uno">
+    <TextView
+            android:text="@string/datos_cliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/textView26" android:layout_weight="1"
+            android:textColor="#F5E9E3E3" android:textStyle="bold|italic" android:textSize="25sp"
+    />
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="75dp" android:layout_weight="1">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="178dp"
+                android:layout_height="match_parent">
+            <TextView
+                    android:text="@string/cedula_cliente"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp" android:id="@+id/textView28" android:textColor="#F5E9E3E3"
+                    android:textSize="25sp" android:textStyle="bold|italic" android:textAlignment="center"
+                    android:background="@drawable/round"/>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="178dp"
+                android:layout_height="match_parent">
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="41dp"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/txt_ing_ced_cli_com" android:textColor="@color/colorTextoCampos"
+                    android:background="@drawable/round1"/>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+            android:text="@string/datos_producto"
+            android:layout_width="match_parent"
+            android:layout_height="97dp" android:id="@+id/textView27" android:textColor="#F5E9E3E3"
+            android:textStyle="bold|italic" android:textSize="25sp"
+    />
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_weight="1">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="180dp"
+                android:layout_height="match_parent">
+            <TextView
+                    android:text="@string/id_zapato"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp" android:id="@+id/textView29" android:textColor="#F5E9E3E3"
+                    android:textSize="25sp" android:textStyle="bold|italic" android:textAlignment="center"
+                    android:background="@drawable/round"/>
+            <TextView
+                    android:text="@string/cantidad_producto"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp" android:id="@+id/textView30" android:textStyle="bold|italic"
+                    android:textColor="#F5E9E3E3" android:textAlignment="center" android:textSize="25sp"
+                    android:background="@drawable/round"/>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="180dp"
+                android:layout_height="match_parent">
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/txt_ing_id_pro_com" android:textColor="@color/colorTextoCampos"
+                    android:background="@drawable/round1"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/txt_ing_can_pro" android:textColor="@color/colorTextoCampos"
+                    android:background="@drawable/round1"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="29dp" android:layout_weight="1" tools:layout_editor_absoluteY="211dp"
+    >
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/textView36" android:layout_weight="1"/>
+        <Button
+                android:text="@string/insertar"
+                android:layout_width="59dp"
+                android:layout_height="wrap_content" android:id="@+id/btn_ing_com" android:layout_weight="1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintHorizontal_bias="0.498" android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent" android:textColor="@color/colorTextoBotones"
+                android:background="@drawable/round2" android:textSize="18sp"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/textView25" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

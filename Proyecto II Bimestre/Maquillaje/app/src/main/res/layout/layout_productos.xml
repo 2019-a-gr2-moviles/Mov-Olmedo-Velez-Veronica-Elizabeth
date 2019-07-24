@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical" android:id="@+id/linear_layout_pro">
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/textView3" android:textStyle="italic"
+            android:textAlignment="center"/>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/lay_cam_pro">
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:id="@+id/layout11">
+            <TextView
+                    android:text="@string/id_cliente"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp" android:id="@+id/textView11" android:layout_weight="1"
+                    android:textColor="#F5E9E3E3" android:textStyle="bold|italic"
+                    android:textSize="20dp"/>
+            <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="30dp" android:layout_weight="1"
+                    android:textColor="@color/colorTextoCampos" android:id="@+id/txt_id_pro"
+                    android:textSize="20dp"/>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:id="@+id/layout3">
+            <TextView
+                    android:text="@string/marca_producto"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp" android:id="@+id/textView12" android:layout_weight="1"
+                    android:textColor="#F5E9E3E3" android:textStyle="bold|italic"
+                    android:textSize="20dp"/>
+            <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="30dp" android:layout_weight="1"
+                    android:textColor="@color/colorTextoCampos"
+                    android:textSize="20dp" android:id="@+id/txt_mar_pro"/>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:id="@+id/layout2">
+            <TextView
+                    android:text="@string/color_producto"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp" android:id="@+id/textView13" android:layout_weight="1"
+                    android:textColor="#F5E9E3E3" android:textStyle="bold|italic"
+                    android:textSize="20dp"/>
+            <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="30dp" android:layout_weight="1"
+                    android:textColor="@color/colorTextoCampos"
+                    android:textSize="20dp" android:id="@+id/txt_col_pro"/>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:id="@+id/layout1">
+            <TextView
+                    android:text="@string/tipo_producto"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp" android:id="@+id/textView14" android:layout_weight="1"
+                    android:textColor="#F5E9E3E3" android:textStyle="bold|italic"
+                    android:textSize="20dp"/>
+            <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="30dp" android:id="@+id/txt_tip_pro" android:layout_weight="1"
+                    android:textColor="@color/colorTextoCampos"
+                    android:textSize="20dp"/>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/layout4">
+            <TextView
+                    android:text="@string/nombre_producto"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp" android:id="@+id/textView15" android:layout_weight="1"
+                    android:textColor="#F5E9E3E3" android:textStyle="bold|italic"
+                    android:textSize="20dp"/>
+            <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="30dp" android:layout_weight="1"
+                    android:textColor="@color/colorTextoCampos"
+                    android:textSize="20dp" android:id="@+id/txt_exi_pro"/>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/layout5">
+            <TextView
+                    android:text="@string/cantidad_producto"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent" android:id="@+id/textView16" android:layout_weight="1"
+                    android:textColor="#F5E9E3E3" android:textStyle="bold|italic"
+                    android:textSize="20dp"/>
+            <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent" android:id="@+id/txt_can_pro" android:layout_weight="1"
+                    android:textColor="@color/colorTextoCampos"
+                    android:textSize="20dp"/>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/layout6">
+            <TextView
+                    android:text="@string/precio_producto"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp" android:id="@+id/textView17" android:layout_weight="1"
+                    android:textColor="#F5E9E3E3" android:textStyle="bold|italic"
+                    android:textSize="20dp"/>
+            <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="30dp" android:id="@+id/txt_pre_pro" android:layout_weight="1"
+                    android:textColor="@color/colorTextoCampos"
+                    android:textSize="20dp"/>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:layout_weight="1" android:id="@+id/layout7">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/textView1"
+                    android:textColor="@color/colorTextoCampos"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/layout8">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/textView5" android:layout_weight="1"/>
+        <Button
+                android:text="@string/btn_eliminar"
+                android:layout_width="148dp"
+                android:layout_height="30dp" android:id="@+id/btn_eli_pro"
+                android:background="@drawable/round2" android:textColor="@android:color/white"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/textView6" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

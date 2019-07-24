@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".modulo_zapatos.MenuZapatos">
+    <ImageView
+            android:layout_width="149dp"
+            android:layout_height="80dp" app:srcCompat="@drawable/maquillaje"
+            android:id="@+id/imageView2" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"/>
+    <TextView
+            android:text="CATÁLOGO MAQUILLAJE"
+            android:layout_width="282dp"
+            android:layout_height="37dp"
+            android:id="@+id/text_titulo" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2"
+            android:textSize="24sp" android:textColor="#817C7C" android:textAlignment="center"
+            android:textStyle="bold"/>
+    <Button
+            android:text="@string/insertar"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:id="@+id/btn_ing_product"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="30dp" app:layout_constraintTop_toBottomOf="@+id/btn_ver_product"
+            app:layout_constraintStart_toEndOf="@+id/imageView16" android:layout_marginStart="16dp"
+            android:layout_marginBottom="30dp" app:layout_constraintBottom_toTopOf="@+id/btn_mod_product"
+            android:background="@drawable/round" android:textColor="#F5E9E3E3"/>
+    <Button
+            android:text="@string/modificarEliminar"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:id="@+id/btn_mod_product"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="24dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="30dp" app:layout_constraintTop_toBottomOf="@+id/btn_ing_product"
+            android:background="@drawable/round" android:textColor="#F5E9E3E3"
+    />
+    <Button
+            android:text="@string/ver"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:id="@+id/btn_ver_product"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="30dp"
+            android:layout_marginTop="30dp" app:layout_constraintTop_toBottomOf="@+id/button"
+            app:layout_constraintStart_toEndOf="@+id/imageView15" android:layout_marginStart="16dp"
+            android:layout_marginBottom="30dp" app:layout_constraintBottom_toTopOf="@+id/btn_ing_product"
+            android:background="@drawable/round" android:textColor="#F5E9E3E3"/>
+    <Button
+            android:text="Gestión Catálogo"
+            android:layout_width="376dp"
+            android:layout_height="66dp"
+            android:id="@+id/button"
+            app:layout_constraintTop_toBottomOf="@+id/text_titulo" android:background="@drawable/img1"
+            android:textColor="@android:color/white" android:textSize="30sp" android:textAllCaps="true"
+            android:textStyle="bold" android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.019"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent"/>
+    <ImageView
+            android:layout_width="144dp"
+            android:layout_height="92dp" app:srcCompat="@drawable/images"
+            android:id="@+id/imageView15"
+            app:layout_constraintTop_toTopOf="@+id/btn_ver_product"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_ver_product"
+            app:layout_constraintEnd_toStartOf="@+id/btn_ver_product" android:layout_marginEnd="30dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="32dp"
+            app:layout_constraintHorizontal_bias="1.0"/>
+    <ImageView
+            android:layout_width="182dp"
+            android:layout_height="99dp" app:srcCompat="@drawable/anadir"
+            android:id="@+id/imageView16"
+            app:layout_constraintTop_toTopOf="@+id/btn_ing_product"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_ing_product"
+            app:layout_constraintEnd_toStartOf="@+id/btn_ing_product" android:layout_marginEnd="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="16dp"
+            app:layout_constraintHorizontal_bias="1.0"/>
+    <ImageView
+            android:layout_width="147dp"
+            android:layout_height="98dp" app:srcCompat="@drawable/modificar"
+            android:id="@+id/imageView17"
+            app:layout_constraintTop_toTopOf="@+id/btn_mod_product"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_mod_product"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="16dp"
+            app:layout_constraintVertical_bias="0.596"/>
+</android.support.constraint.ConstraintLayout>
